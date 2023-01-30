@@ -1,0 +1,49 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: black;
+	color: #F4C69A;
+	margin: 0;
+	padding: 0;
+}
+hr {
+	
+}
+
+h1, h2{
+	
+}
+
+.tartalom {
+	margin: 0 auto;
+	width: 800px;
+	border: 0;
+}
+
+.fejlec {
+	text-align: center;
+}
+
+.bal {
+	float: left;
+}
+
+.jobb {
+	float: right;
+}
+
+.lablec {
+	clear: both;
+}
+
+.kep {
+	
+}
+
+a {
+	color: #226600;
+}
+
+div {
+	border: 1px solid red;
+}
+

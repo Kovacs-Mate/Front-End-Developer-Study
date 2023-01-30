@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.mainbg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgb(0, 0, 0)
+        ),
+        url(img/mainBG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1000;
+}
+
+/* Navigation Bar Starts Here */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
+    color: white;
+    text-shadow: 0 0 10px black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.brand-title {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 10px;
+    width: 160px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-title span {
+    color: red;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li:last-child {
+    margin-right: 30px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.navbar-links li a:hover {
+    background-color: rgba(170, 170, 170, 0.1);
+    letter-spacing: 3px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 17px;
+    right: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Navigation Bar Ends Here */
+
+.gapmaker {
+    margin: 0 auto;
+    height: 55px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+section {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-image {
+    margin: 30px 0;
+    width: 35%;
+    height: 45vh;
+    border-radius: 25px;
+    background-image: url(img/portrait.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.section-text {
+    width: 55%;
+    height: 55vh;
+}
+
+.section-text h3 {
+    margin-top: 30px;
+}
+
+.section-text p {
+    margin: 30px 0;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer .shade {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+footer .footer-content {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-content .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+footer .footer-content p {
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+footer .footer-content h1 {
+    margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(103, 156, 255);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Navigation Bar Starts Here */
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li:last-child {
+        margin-right: 0px;
+    }
+
+    .navbar-links li a {
+        padding: 10px;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    /* Navigation Bar Ends Here */
+
+    section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .gapmaker {
+        width: 100%;
+    }
+
+    .section-image {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .section-text {
+        width: 80%;
+        margin: 0;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

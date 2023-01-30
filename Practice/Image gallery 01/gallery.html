@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./css/gallery.css">
+  <script src="./js/gallery.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <!-- background video -->
+    <div class="bg-video">
+      <div class="bg-video-effect"></div>
+    </div>
+    <!-- Gallery -->
+    <div class="img-container">
+      <div class="img-column">
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_01.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_02.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_03.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_04.jpg">
+        </div>
+      </div>
+      <div class="img-column">
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_08.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_15.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_05.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_09.jpg">
+        </div>
+      </div>
+      <div class="img-column">
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_06.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_11.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_07.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_10.jpg">
+        </div>
+      </div>
+      <div class="img-column">
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_12.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_13.jpg">
+        </div>
+        <div>
+          <img onclick="toggleImg(this);" src="./img/img_14.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- Pop Up image window (hidden->active) -->
+    <div class="img-fullscreen-container" onclick="toggleImg()">
+      <img class="img-fullscreen" src="">
+    </div>
+  </div>
+</body>
+
+</html>

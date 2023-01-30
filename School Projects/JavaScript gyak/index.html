@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        Régi:
+        int = integer 1 2
+        float = double 1.2 0.2
+        char = a b
+        string = alma
+        bool = true/false
+        Új:
+        var = változó a = 7, c = 16/8
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var a = prompt('Adj meg egy számot!', '0');
+
+        if (isFinite(a)) {
+            if (Math.floor(a) == a) {
+                if (a > 0) {
+                    document.write('a pozitív');
+                }
+                else if (a < 0) {
+                    document.write('a negatív');
+                }
+                else {
+                    document.write('a nulla');
+                }
+            }
+
+            else {
+                document.write('Nem egész szám');
+            }
+        }
+
+        else {
+            document.write('Nem számot adott meg');
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <p>
+        Ezt a HTML írta.
+    </p>
+</body>
+
+</html>

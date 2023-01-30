@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image:linear-gradient(rgb(112, 112, 112), rgb(70, 70, 70),rgb(41, 41, 41));
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.header {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 195, 255);
+    box-shadow: 0 0 20px black;
+    line-height: 50px;
+}
+
+.title {
+    text-shadow: 0 0 10px black;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+.text {
+    margin: 50px 50px;
+    font-size: 25px;
+}
+
+.last {
+    padding-bottom: 1000px;
+}
+
+.bottombar {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 5px black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.red, .green, .blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 20%;
+    box-shadow: 0 0 20px black;
+    transition: 0.5s;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.65);
+    border-radius: 10px 0 0 0;
+}
+
+.green {
+    background-color: rgba(0, 128, 0, 0.65);
+    z-index: -1;
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.65);
+    border-radius: 0 10px 0 0;
+}
+
+.red:hover {
+    background-color: red;
+    letter-spacing: 3px;
+    transform: scaleY(1.15);
+    font-weight: 700;
+}
+
+.green:hover {
+    background-color: green;
+    letter-spacing: 3px;
+    transform: scaleY(1.15);
+    font-weight: 700;
+}
+
+.blue:hover {
+    background-color: blue;
+    letter-spacing: 3px;
+    transform: scaleY(1.15);
+    font-weight: 700;
+}

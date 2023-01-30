@@ -1,0 +1,18 @@
+.box1 {
+    border: 3px solid greenyellow;
+}
+.box2 {
+    border: 3px solid rgb(26, 134, 138);
+}
+.box3 {
+    border: 3px solid rgb(172, 14, 137);
+}
+.row {
+    min-height: 600px;
+    background-color: darkturquoise;
+}
+#doboz1,
+#doboz2,
+#doboz3 {
+    max-height: 300px;
+}

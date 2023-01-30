@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.box1 {
+    border: #545a4d solid 1px;
+    background-color: #7e5233;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px black;
+}
+.box2 {
+    border: #c3b59c solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px black;
+}
+#doboz-1 {
+    margin: 10px;
+    height: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#doboz-2 {
+    height: 100px;
+    width: 300px;
+    background-color: #b98753;
+    color: white;
+    text-shadow: 0px 3px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

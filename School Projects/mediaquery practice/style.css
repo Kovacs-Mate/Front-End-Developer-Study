@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+div {
+    height: 350px;
+}
+
+.div1 {
+    background-color: grey;
+    float: left;
+    width: 50%;
+}
+
+.div2 {
+    background-color: red;
+    float:right;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .div1 {
+        float: none;
+        width: 100%;
+    }
+    .div2 {
+        float: none;
+        width: 100%;
+    }
+    body {
+        background-color: aqua;
+    }
+}

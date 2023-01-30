@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipő érdeklődés</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <video src="img/bg_video.mp4" autoplay muted loop id="BG_VIDEO"></video>
+    <div class="own-cont">
+        <form method="get" id="my-form" action="">
+            <label>Név*</label><br>
+            <input type="text" name="nev" id="NEV" placeholder="Név*" required><br>
+            <label>E-mail*</label><br>
+            <input type="email" name="email" id="EMAIL" placeholder="E-mail*" required><br>
+            <label>Telefon</label><br>
+            <input type="text" name="tel" id="TEL" placeholder="Tel:+36..."><br>
+            <label>Lábméret*</label><br>
+            <input type="number" name="Lab_meret" id="LAB_MERET" placeholder="Lábméret*" min="35" max="47" required><br>
+            <select name="c_tip" id="C_TIP" required>
+                <option selected value="">Válasszon...</option>
+                <option value="1">Edzőcipő</option>
+                <option value="2">Túracipő</option>
+                <option value="3">Szandál</option>
+            </select>
+            <br>
+            <p>
+                <input type="checkbox" name="adatkezeles" id="ADATKEZELES" required>Elolvastam és elfogadom az <a
+                    href="adat.html" target="_blank">adatkezelési tájékoztatót.</a>
+            </p>
+            <br>
+            <input type="submit" name="go" id="GO" value="KÜLDÉS">
+        </form>
+    </div>
+</body>
+
+</html>

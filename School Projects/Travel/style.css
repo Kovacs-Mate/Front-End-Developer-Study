@@ -1,0 +1,41 @@
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.header {
+    margin: 30px auto;
+}
+
+.hero_image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+span {
+    background-color: rgb(170, 231, 255);
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+table {
+    width: 90%;
+    margin:20px auto;
+}

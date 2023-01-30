@@ -1,0 +1,6 @@
+a képernyő alján legyen 3 div:
+classok: .red, .blue, .green
+
+A 3 div egymás mellett legyen, mindegyik 80px magas,
+és minden div background-ja a neve alapján jelenjen meg!
+A 80px-et ne minden classnál add meg!
