@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.doboz {
+    width: 200px;
+    padding: 60px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.zold {
+    background-color: green;
+}
+.kek {
+    background-color: dodgerblue;
+}
+.narancs {
+    background-color: orangered;
+}
